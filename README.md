@@ -1,7 +1,9 @@
 # tickertape app
 
-* Created with React JS
+<img align="center"  src="https://raw.githubusercontent.com/juanluissv/tickertape/master/src/ticker.png"/>
 
-* Use CSS for animation
+<h2>* Created with React JS </h2>
 
-* Data is in data.js file
+<h2>* Use CSS for animation </h2>
+
+<h2>* Data is in data.js file </h2>
