@@ -1,6 +1,6 @@
-const phrases = [
+const data = [
     "Feel better.",
-   "Work better.",
+    "Work better.",
     "Sleep better.",
     "Communicate better.",
     "Function better.",
@@ -10,7 +10,7 @@ const phrases = [
     "Treat yourself + others better.",
     "Do life better.",
     "Feel better.",
-   "Work better.",
+    "Work better.",
     "Sleep better.",
     "Communicate better.",
     "Function better.",
@@ -20,4 +20,4 @@ const phrases = [
     "Treat yourself + others better.",
     "Do life better."
 ]
-export default phrases;
+export default data;
