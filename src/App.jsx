@@ -1,6 +1,6 @@
 import phrases from './data.js'
 import './App.css';
-import Ticker from './Ticker.jsx';
+import Ticker from './components/Ticker.jsx';
 
 function App() {
   return (
