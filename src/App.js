@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import phrases from './data.js'
 import './App.css';
+import Ticker from './Ticker.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <div className="ticker-tape">
+        <div className="ticker-tape-scroll">
+          {phrases.map((phrase, index) => (
+            <Ticker key={index} phrases={phrase} number={index} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
-
 export default App;

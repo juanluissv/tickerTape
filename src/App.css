@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+box-sizing: border-box;
+
+div {
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Signifier;
+    src: url(fonts/Signifier-Light.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: SignifierItalic;
+    src: url(fonts/Signifier-LightItalic.otf);
+}
+
+@keyframes ticker-tape-scrolling {
+  0% {
+    left: 0%
+  }
+  100% {
+    left: -50%
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNJcXu63DaIxQ2ckUDe8ALS5yeonG4M41Prfe1834GF4oGPD_eYGlKN1CEwXe_zndu6cs&usqp=CAU");
+    height: 90px;
+    padding-top: 15px;
+}
+.ticker-tape {
+  background: #EDE7E1;
+  width: 100%;
+  height: 71px;
+  margin: 0 auto 0;
 }
 
-.App-link {
-  color: #61dafb;
+.ticker-tape-scroll {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ticker-tape-collection {
+  display: table-cell;
+  position: relative;
+  animation: ticker-tape-scrolling 29.2s linear infinite running;
+}
+
+.ticker-tape-story {
+  display: inline-block;
+  font-family: "Signifier", Helvetica, sans-serif;
+}
+
+.ticker-tape-story2 {
+    display: inline-block;
+    font-family: "SignifierItalic", Helvetica, sans-serif;
+}
+
+.ticker-tape-story span {
+  display: inline-block;
+  padding: 1rem;
+  color: #45221D;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.ticker-tape-story2 span {
+    display: inline-block;
+    padding: 1rem;
+    color: #45221D;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ticker-tape-story span {
+    font-size: 21px;
+    line-height: 27px;
+    padding: 1.3rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .ticker-tape-story2 span {
+    font-size: 21px;
+    line-height: 27px;
+    padding: 1.3rem 1rem;
   }
 }
